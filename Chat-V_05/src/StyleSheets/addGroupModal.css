@@ -1,0 +1,93 @@
+.addgroup-overlay {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    height: 50%;
+    width: 30%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .65);
+
+}
+
+.addgroup-content {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10%;
+    z-index: 10000;
+    overflow: auto;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.addgroup-content:after {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    content: '';
+}
+
+.addgroupDialog {
+    position: relative;
+    outline: 0;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    max-width: 520px;
+    cursor: default;
+    border-radius: 4px;
+
+}
+
+.addgroupwrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.addform-group {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    position: relative;
+}
+
+.addform-group-heading {
+    margin-bottom: 2em;
+}
+
+.addform-control {
+    position: relative;
+    font-size: 1em;
+    padding: 0.3em;
+@include box-sizing(border-box);
+
+}
+
+input[type="text"].addform-control {
+    margin-top: 1em;
+    min-width: 10%;
+    right: 3%;
+    size: auto;
+}
+
+.addbtnYes {
+    position: relative;
+    width: 70%;
+    left: 13%;
+    margin-top: 2em;
+}
+
+.addbtnaNo {
+    position: relative;
+
+    width: 70%;
+    left: 13%;
+    margin-top: 1em;
+
+}

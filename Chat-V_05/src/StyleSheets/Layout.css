@@ -1,0 +1,159 @@
+
+#layout {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(" http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=56&opacity=100 ");
+
+}
+
+.titleBar {
+    height: 10%;
+
+}
+
+.nav {
+    background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=0a5370ff&noise=626262&density=100&opacity=100");
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.usernameDisplay {
+    float: right;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    color: #ffffff;
+}
+
+#sideAndChat {
+    height: 80%;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1%;
+    justify-content: space-around
+
+}
+
+.sideBar {
+    height: 100%;
+min-width: 28%;
+    max-width: 28%;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    border-radius: 0.75em;
+    overflow-y: scroll;
+    scrollbar-face-color: purple;
+
+}
+
+.sideBar::-webkit-scrollbar {
+    width: 2%;
+    background-color: transparent;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+
+.sideBar::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+.treeDiv {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10000;
+}
+
+.messagesArea {
+    width: 70%;
+    height: 100%;
+    resize: none;
+    border-radius: 2em;
+    border: 2px solid black;
+    overflow-y: scroll;
+
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.messagesDiv {
+
+}
+
+.messageInput {
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+
+    float: bottom;
+    width: 100%;
+    height: 6%;
+    flex-direction: row;
+    /*border:2px solid black ;*/
+    /*border-radius: 0.3em;*/
+
+}
+
+.chats {
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0 0;
+    height: 510px;
+
+}
+
+.chats .chat {
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    padding: 5px 13px;
+    font-size: 14px;
+    border-radius: 10px;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin: 10px 0;
+    max-width: 200px;
+}
+
+.chats .chat.right {
+    float: right;
+    clear: both;
+}
+
+.chats .chat.right.false {
+    filter: blur(2px)
+}
+
+.chats .chat.left.false {
+    filter: blur(2px)
+}
+
+.chatWith {
+    position: fixed;
+
+    float: right;
+    left: 30%;
+    color: #efddf7;
+    font-size: 1.2em;
+
+}
+
+
+
+
+

@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    position: relative;
+    box-sizing: padding-box;
+}
+
+#root {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

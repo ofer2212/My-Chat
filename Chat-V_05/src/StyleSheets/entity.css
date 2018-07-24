@@ -1,0 +1,138 @@
+.entityDiv {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0.05em solid black;
+    border-radius: 0.75em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    height: 4em;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.entityDiv.selected {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0.08em solid #bfd6f7;
+}
+
+.userAvatar {
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    width: 2.7em;
+    height: 2.7em;
+}
+
+.entityNameDiv {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 5%;
+
+}
+
+.entityNameDiv.name {
+}
+
+.entityNameDiv.age {
+}
+
+p.age {
+    margin-left: 0.6em;
+    font-size: 0.8em;
+
+    color: #727172;
+}
+p.age:hover{
+    cursor: default;
+}
+.group p.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Algerian;
+}
+.group p.name:hover{
+    cursor: default;
+}
+
+.user p.name {
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+}
+.user p.name:hover{
+    cursor: default;
+}
+.entityDiv.selected.user p.name {
+color: brown;
+}
+.entityDiv.selected.group p.name {
+    color: brown;
+}
+
+.onlineIndicator {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.onlineCircle {
+    stroke: black;
+    stroke-width: 0.08em;
+}
+
+.downArrow {
+    margin-bottom: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    -webkit-filter: grayscale(100%);
+    opacity: 0.4;
+
+}
+.entityDiv.selected .downArrow:hover{
+    border: 0.05em solid #7ed3f5;
+    border-radius: 1em;
+}
+
+.messageLink {
+    margin-right: 13%;
+    margin-top: 4%;
+    width: 2em;
+    height: 2em;
+    border: 0.05em solid #dadae0;
+    border-radius: 1em;
+    -webkit-filter: grayscale(100%);
+    opacity: 0.4;
+}
+.entityDiv.selected .messageLink:hover{
+    border: 0.1em solid #b1e3f5;
+    cursor: pointer;
+}
+.entityDiv:hover .messageLink{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+}
+.entityDiv:hover .downArrow {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+}
+.entityDiv.selected .messageLink{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+}
+.entityDiv.selected .downArrow{
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+}
+.entityDiv.selected .messageLink:hover{
+    cursor: pointer;
+}
+.entityDiv.selected .downArrow:hover{
+    cursor: pointer;
+}
+
+

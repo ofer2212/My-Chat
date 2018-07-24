@@ -1,0 +1,84 @@
+
+.group-overlay {
+    position: fixed;
+    height: 80%;
+    width: 70%;
+    top: 10%;
+
+    z-index: 1000;
+    border-radius: 1.9em;
+    background-color: rgba(0, 0, 0, .65);
+
+}
+
+.group-content {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+
+    overflow: auto;
+    text-align: center;
+    padding: 4px;
+}
+
+.group-content:after {
+
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    content: '';
+}
+
+.groupDialog {
+    position: relative;
+    outline: 0;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    max-width: 520px;
+    cursor: default;
+    border-radius: 4px;
+
+}
+
+.wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.form-group {
+    border-radius: 1.9em;
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .20);
+    border: 0.1em solid black;
+
+}
+
+.form-group-heading {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+@include box-sizing(border-box);
+
+}
+
+#btnJoinYes {
+    width: 100%;
+    margin-top: 3px;
+    cursor: pointer;
+
+}
+
